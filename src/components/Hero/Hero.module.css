@@ -1,0 +1,69 @@
+
+.title{
+    font-family: 'AnzeigenGroT';
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: -0.01em;
+    line-height: 90%;
+    text-align: center;
+    color: #ED4B5E ;
+}
+
+.span{
+    color: #222222;
+}
+@media  screen and (min-width: 360px) and (max-width: 480px) {
+    .section {
+      padding: 120px 0 40px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .wrapper{
+        width: 319px;
+    }
+   
+  }
+  
+  @media only screen and (min-width: 481px) and (max-width: 767px) {
+    .section {
+      padding: 120px 0 40px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    } 
+    .wrapper{
+        width: 319px;
+    }
+   
+   }
+  
+  @media screen and (min-width: 768px) {
+    .section {
+     padding: 150px 0 70px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .title{
+        font-size: 64px;
+    }
+      .wrapper{
+        width: 460px;
+    }
+     
+    }
+  
+  
+  @media screen and (min-width: 1440px) {
+    .section {
+     padding: 155px 0 50px 0;
+     
+    }
+    .title{
+        font-size: 88px;
+    }
+      .wrapper{
+        width: 630px;
+    }
+  }

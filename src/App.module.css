@@ -1,0 +1,32 @@
+.container {
+  box-sizing: border-box;
+  position: relative;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 360px) and (max-width: 480px) {
+  .container {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .container {
+    width: 480px;
+    padding: 0 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {  
+   width: 768px;
+    padding: 0 30px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 1440px;
+    padding: 0 112px;
+  } 
+}
