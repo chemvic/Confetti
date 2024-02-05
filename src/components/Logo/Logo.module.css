@@ -1,9 +1,5 @@
 .logo{
-    font-family: 'AnzeigenGroT';
-    font-size: 36px;
-    text-transform: uppercase;
-    letter-spacing: -0.01em;
-    color: #ED4B5E;
+   display: inline-block;
 }
 .logo_icon{
     fill: #ED4B5E;

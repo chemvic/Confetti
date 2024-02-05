@@ -22,17 +22,12 @@ const Header = () => {
 
   return (
     
-           <div className={css.header}> 
+    <div className={css.header}> 
         <div className={`${css.logo} ${scrolled ? css.scrolled : ''}`}>
              <Logo/>
         </div>
-
-        <div className={css.menu_wrapper}>
-            <BurgerMenu scrolled={scrolled}/>
-        </div>
-       
-
-</div>
+        <BurgerMenu scrolled={scrolled}/>
+    </div>
   )
 }
 

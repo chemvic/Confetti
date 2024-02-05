@@ -27,6 +27,7 @@
     }
     .wrapper{
         width: 319px;
+        margin-bottom: 36px;
     }
    
   }
@@ -59,6 +60,7 @@
     }
       .wrapper{
         width: 510px;
+        margin-bottom: 48px;
     }
      
     }
@@ -75,5 +77,6 @@
     }
       .wrapper{
         width: 610px;
+        margin-bottom: 64px;
     }
   }

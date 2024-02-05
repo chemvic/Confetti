@@ -1,0 +1,94 @@
+.card{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: 148px;
+    height: 197px;
+    background-color:#EAEDF1;
+    padding: 13px 12px 12px 12px;
+}
+
+  .title{
+    font-family: 'Oswald';
+    font-size: 16px;
+    font-style: normal;
+    text-transform: uppercase;
+    color: #173D33;
+}
+.icon{
+    fill: #173D33;
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+}
+.heading{
+    display: flex; 
+   align-items: center;
+   margin-bottom: 46px;
+}
+.text{  
+    margin-top: 12px;  
+    position: relative;
+}
+.text::before {
+    content: "";
+    position: absolute;
+    top: -12px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #97D28B;
+  }
+.description{
+    font-family: 'FiraSans';
+    font-size: 14px;
+    font-style: normal;
+    letter-spacing: -0.04em;
+    color: #173D33;
+    text-align: justify;
+}
+
+  @media screen and (min-width: 768px) {
+    .card{
+        width: 159px;
+        padding: 12px;
+    }
+    .title{
+        font-size: 18px;       
+    }
+    .icon{
+        width: 16px;
+        height: 16px;
+        margin-right: 8px;
+    }
+    .heading{
+       margin-bottom: 64px;
+    }  
+}
+ 
+  @media screen and (min-width: 1440px) {
+    .card{       
+        width: 274px;
+        height: 339px;       
+        padding: 48px 24px;
+    }
+    .text{
+       margin-top: 24px; 
+    }
+    .text::before {
+        top: -24px;
+      }
+      .title{
+        font-size: 32px;
+    }
+    .icon{
+        width: 24px;
+       height: 24px;
+    }   
+    .heading{
+        margin-bottom: 119px;
+     } 
+    .description{
+        font-size: 16px;       
+    }
+}
