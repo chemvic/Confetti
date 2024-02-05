@@ -1,0 +1,197 @@
+
+.menu_icon{
+    fill: #222222;
+    width: 24px;
+   height: 24px;
+   -webkit-transition-property: fill;
+   transition-property: fill;
+   -webkit-transition-duration: .3s;
+           transition-duration: .3s;
+   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.logo{
+    display: flex;
+    font-family: 'AnzeigenGroT';
+    font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: -0.01em;
+    color: #ED4B5E;
+}
+
+.burger_button{  
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        -webkit-transition-property: background-color;
+        transition-property:background-color ;
+        -webkit-transition-duration: .3s;
+                transition-duration: .3s;
+        -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+                transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.burger_button:hover .menu_icon{
+    fill: #ED4B5E;
+}
+.close_button{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 30px;
+    width: 70px;
+    padding: 0;
+    margin-bottom: 33px;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    font-family: 'FiraSans';
+    font-style: normal;
+    font-size: 20px;
+    letter-spacing: -0.04em;
+    cursor: pointer;
+    -webkit-transition-property:color;
+    transition-property:color ;
+    -webkit-transition-duration: .3s;
+            transition-duration: .3s;
+    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
+}
+.close_icon{
+    fill: #222222;
+    width: 20px;
+    height: 20px;
+    -webkit-transition-property: fill;
+    transition-property: fill;
+    -webkit-transition-duration: .3s;
+            transition-duration: .3s;
+    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    margin-right: 4px;
+}
+
+.close_button:hover .close_icon{
+fill: #ED4B5E;
+}
+.header_wrapper{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 62px;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 239, 240, 0.5);
+    /* background-color: #FFF7E8; */
+    z-index: 2;
+  }
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .modal.open {
+    opacity: 1;
+  }
+
+/* .modal{
+  position: fixed;
+  width: 100%;
+  border-radius: 25px;
+  padding: 30px 20px; 
+  background-color: #fff;
+  color: white;
+  display: flex;
+  flex-direction: column;
+ 
+  align-items: center;
+  
+  top:20;
+ 
+  z-index: 3;
+  transform: translateY(-100%);
+  -webkit-transition-property: transform;
+  transition-property:transform ;
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+ 
+}
+.modal.open {
+    transform: translateY(0);
+  } */
+
+/* .modal_wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+     
+} */
+
+.modal_item:not(:last-child){
+    margin-bottom: 24px;
+}
+
+/*  */
+@media  screen and (min-width: 360px) and (max-width: 480px) {
+    /* .modal{
+     width: 320px; 
+     height: 90vh;
+     top: 36px;
+     right: 20px;
+    } */
+   }
+   
+   @media only screen and (min-width: 481px) and (max-width: 767px) {
+     /* .modal{
+         width: 320px;
+         height: 90vh;
+         top: 36px;
+         right: 20px;
+        } */
+    }
+   
+   @media screen and (min-width: 768px) {
+   
+        .header_wrapper{         
+            margin-bottom: 78px;
+        } 
+        .modal_item:not(:last-child){
+            margin-bottom: 36px;
+        } 
+     }
+   
+   
+   @media screen and (min-width: 1440px) {
+   
+   .header_wrapper{
+       margin-bottom: 100px;
+   }
+   .modal_item:not(:last-child){
+    margin-bottom: 48px;
+}
+   }

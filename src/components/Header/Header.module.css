@@ -6,7 +6,6 @@
     position: fixed;
     align-items: center;
     justify-content:space-between;
-    background-color: pink;
     background-color: transparent;
 
 }
@@ -37,6 +36,11 @@
     line-height: 90%;
     color: #222222;
     margin-right: 8px;
+}
+.menu_wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .scrolled{
     /* visibility: hidden; */

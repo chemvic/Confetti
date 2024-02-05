@@ -1,6 +1,7 @@
 import {useEffect, useState} from 'react';
 import css from './Header.module.css';
 import Logo from 'components/Logo/Logo';
+import BurgerMenu from 'components/BurgerMenu/BurgerMenu';
 
 const Header = () => {
     const [scrolled, setScrolled]=useState (false);
@@ -26,11 +27,9 @@ const Header = () => {
              <Logo/>
         </div>
 
-        <div>
+        <div className={css.menu_wrapper}>
             <span className={`${css.menu} ${scrolled ? css.scrolled : ''}`}>Menu</span>
-            <button>Burger</button>
-
-
+            <BurgerMenu/>
         </div>
        
 
