@@ -9,7 +9,7 @@ const BurgerLink = ({text, link, closeMenu}) => {
                      className={css.modal_link}
                      to={link}
                      onClick={closeMenu}
-                     offset={-100}
+                    //  offset={-50}
                      smooth={true}
                      duration={500}
                     >
