@@ -3,7 +3,7 @@ import css from './BurgerMenu.module.css';
 import icons from '../../images/icons.svg';
 import BurgerLink from 'components/BurgerLink/BurgerLink';
 
-const BurgerMenu = () => {
+const BurgerMenu = ({scrolled}) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const openMenu = () => {
@@ -18,11 +18,15 @@ const BurgerMenu = () => {
 
   return (
     <div>
+      <div className={css.menu_wrapper}>
+      <span className={`${css.menu} ${scrolled ? css.scrolled : ''}`}>Menu</span>
       <button className={css.burger_button} onClick={openMenu}>
+        
         <svg className={css.menu_icon}>
           <use href={`${icons}#icon-burger`} />
         </svg>
       </button>
+      </div>
       {isOpen && (
         <>
           <div className={css.overlay} onClick={closeMenu}></div>
@@ -34,6 +38,7 @@ const BurgerMenu = () => {
            </a>
            </div>
            <div>
+
             <button className={css.close_button} onClick={closeMenu}>
             <svg className={css.close_icon}>
               <use href={`${icons}#icon-close`} />

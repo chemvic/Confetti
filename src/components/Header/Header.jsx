@@ -28,8 +28,7 @@ const Header = () => {
         </div>
 
         <div className={css.menu_wrapper}>
-            <span className={`${css.menu} ${scrolled ? css.scrolled : ''}`}>Menu</span>
-            <BurgerMenu/>
+            <BurgerMenu scrolled={scrolled}/>
         </div>
        
 

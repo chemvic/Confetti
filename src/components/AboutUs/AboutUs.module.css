@@ -1,0 +1,79 @@
+
+.title{
+    font-family: 'AnzeigenGroT';
+    font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: -0.01em;
+    line-height: 90%;
+    text-align: center;
+    color: #222222 ;
+    margin-bottom: 16px;
+}
+.description{
+    font-family: 'Inter';
+    font-size: 20px;
+    letter-spacing: -0.01em;
+    line-height: 140%;
+    text-align: center;
+    color: #565148 ;
+}
+
+@media  screen and (min-width: 360px) and (max-width: 480px) {
+    .section {
+      padding: 40px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .wrapper{
+        width: 319px;
+    }
+   
+  }
+  
+  @media only screen and (min-width: 481px) and (max-width: 767px) {
+    .section {
+      padding: 40px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    } 
+    .wrapper{
+        width: 319px;
+    }
+   
+   }
+  
+  @media screen and (min-width: 768px) {
+    .section {
+     padding:  70px 0 40px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .title{
+        font-size: 48px;
+    }
+    .description{
+        font-size: 24px;
+    }
+      .wrapper{
+        width: 510px;
+    }
+     
+    }
+  
+  
+  @media screen and (min-width: 1440px) {
+    .section {
+     padding: 50px 0;
+     
+    }
+    .title{
+        font-size: 56px;
+        margin-bottom: 24px;
+    }
+      .wrapper{
+        width: 610px;
+    }
+  }

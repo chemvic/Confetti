@@ -19,13 +19,46 @@
     letter-spacing: -0.01em;
     color: #ED4B5E;
 }
+.menu{
+    opacity: 1;
+    
+   font-family: 'AnzeigenGroT';
+   font-size: 24px;
+   text-transform: uppercase;
+   letter-spacing: -0.01em;
+   line-height: 90%;
+   color: #222222;
+   -webkit-transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+                      opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+   transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+              opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+              /* margin-right: 8px; */
+}
+.menu_wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.menu_wrapper:hover .menu,
+.menu_wrapper:focus .menu,
+.menu_wrapper:hover .menu_icon,
+.menu_wrapper:focus .menu_icon {
+ 
+  color: #ED4B5E;
+  fill: #ED4B5E;
+}
+
+
+.scrolled{
+   opacity: 0;
+}
 
 .burger_button{  
         display: inline-flex;
         justify-content: center;
         align-items: center;
-        height: 30px;
-        width: 30px;
+        height: 32px;
+        width: 32px;
         border-radius: 50%;
         background-color: transparent;
         border: none;
