@@ -14,12 +14,17 @@
 .modal_link:hover{
     color: #ED4B5E;
 }
+
+.modal_link:focus{
+    outline: 2px solid #ED4B5E;
+}
+
 @media screen and (min-width: 768px) {
    .modal_link{
     font-size: 64px;
    }
     }
-  
+
   
   @media screen and (min-width: 1440px) {
     .modal{

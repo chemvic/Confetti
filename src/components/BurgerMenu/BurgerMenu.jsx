@@ -28,14 +28,19 @@ const BurgerMenu = () => {
           <div className={css.overlay} onClick={closeMenu}></div>
           <div className={`${css.modal} ${isOpen ?css.open: ''}`}>
            <div className={css.header_wrapper}> 
-           <a href='/' className={css.logo}>
+           <div>
+            <a href='/' className={css.logo}>
             CONFETTI
            </a>
-          <button className={css.close_button} onClick={closeMenu}>
+           </div>
+           <div>
+            <button className={css.close_button} onClick={closeMenu}>
             <svg className={css.close_icon}>
               <use href={`${icons}#icon-close`} />
             </svg> close
-          </button>  
+          </button>
+           </div>
+            
           </div>          
           <div className={css.modal_wrapper}>           
               <nav>
