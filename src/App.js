@@ -3,6 +3,7 @@ import css from './App.module.css';
 import Hero from 'components/Hero/Hero';
 import Background from 'components/Background/Background';
 import AboutUs from 'components/AboutUs/AboutUs';
+import Reviews from 'components/Rewiews/Reviews';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Header />
       <Hero id="hero"/>
       <AboutUs id="about"/>
+      <Reviews id="rewiews"/>
     </div>
   );
 }

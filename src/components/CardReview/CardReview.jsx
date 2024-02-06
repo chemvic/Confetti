@@ -1,24 +1,23 @@
 
-import css from './Card.module.css';
+import css from './CardReview.module.css';
 import icons from '../../images/icons.svg';
 
 
-const Card = ({title, text, icon}) => {
+const CardReview = ({text, name}) => {
    return (
      <div className={css.card}>
-        <div className={css.heading}>
-          <svg className={css.icon}>
-            <use href={`${icons}#${icon}`} />
-          </svg>          
-            <h3 className={css.title}>{title}</h3>  
+        <div className={css.review}>                   
+          <p className={css.text}>{text}</p>  
         </div>
       
-       <div className={css.text}>
-        <p className={css.description}>{text}</p>
-       </div>
-       
+       <div className={css.user}>
+        <svg className={css.icon}>
+          <use href={`${icons}#icon-user`} />
+        </svg>
+        <p className={css.name}>{name}</p>
+       </div>  
 
      </div>
    );
  };
- export default Card;
+ export default CardReview;

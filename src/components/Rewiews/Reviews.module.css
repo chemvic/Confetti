@@ -1,0 +1,103 @@
+
+.title{
+    font-family: 'AnzeigenGroT';
+    font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: -0.01em;
+    line-height: 110%;
+    text-align: center;
+    color: #ED4B5E ;
+    margin-bottom: 36px;
+}
+.slick-dots li button {
+    padding: 36px;
+}
+
+
+@media  screen and (min-width: 360px) and (max-width: 480px) {
+    .section {
+      padding: 40px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+      
+  }
+  
+  @media only screen and (min-width: 481px) and (max-width: 767px) {
+    .section {
+      padding: 40px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    } 
+    
+    
+   }
+  
+  @media screen and (min-width: 768px) {
+    .section {
+     padding:  40px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .title{
+        font-size: 48px;
+        margin-bottom: 48px;
+    }
+    .icon{
+        fill: #222222;
+         width: 24px;
+        height: 24px;
+        -webkit-transition-property: fill;
+        transition-property: fill;
+        -webkit-transition-duration: .3s;
+                transition-duration: .3s;
+        -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+                transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .button{  
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            height: 56px;
+            width: 56px;
+            border-radius: 50%;
+            border: 1px solid #D2D2D2;
+            background-color: #fff;
+            color: #222222;       
+            cursor: pointer
+    }
+    
+    .button:hover .icon,
+    .button:focus .icon{
+        fill: #ED4B5E;
+    }
+    .prev_button{
+        position: absolute;
+        top: 268px;
+        left: 286px;
+      }
+      .next_button{
+        position: absolute;
+        top: 268px;
+        left: 366px;
+      }
+    
+    }
+  
+  
+  @media screen and (min-width: 1440px) {
+    .section {
+     padding: 50px 0;
+     
+    }
+    .title{
+        font-size: 100px;
+        margin-bottom: 64px;
+    }
+      
+    
+  }

@@ -17,8 +17,8 @@
     text-align: center;
     color: #565148 ;
 }
-.slick-dots{
-    padding-top: 36px;
+.slick-dots li button {
+    padding: 36px;
 }
 
 @media  screen and (min-width: 360px) and (max-width: 480px) {
@@ -32,10 +32,7 @@
         width: 319px;
         margin-bottom: 36px;
     }
-    /* .slider {
-        display: block;
-    } */
-   
+      
   }
   
   @media only screen and (min-width: 481px) and (max-width: 767px) {
@@ -49,10 +46,7 @@
         width: 319px;
         margin-bottom: 36px;
     }
-    /* .slider {
-        display: block;
-    } */
-   
+    
    }
   
   @media screen and (min-width: 768px) {
@@ -72,9 +66,7 @@
         width: 510px;
         margin-bottom: 48px;
     }
-    /* .slider {
-        display: none;
-    } */
+   
     .grid_container {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
