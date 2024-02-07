@@ -1,4 +1,4 @@
-
+import PropTypes from 'prop-types';
 import css from './CardReview.module.css';
 import icons from '../../images/icons.svg';
 
@@ -20,4 +20,8 @@ const CardReview = ({text, name}) => {
      </div>
    );
  };
+ CardReview.propTypes = {
+  text: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+ }
  export default CardReview;

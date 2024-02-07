@@ -1,4 +1,4 @@
-
+import PropTypes from 'prop-types';
 import css from './CardAbout.module.css';
 
 const CardAbout = ({title, text, bgcolor}) => {
@@ -9,4 +9,9 @@ const CardAbout = ({title, text, bgcolor}) => {
      </div>
    );
  };
+ CardAbout.propTypes = {
+  title: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+  bgcolor: PropTypes.string.isRequired,
+ }
  export default CardAbout;

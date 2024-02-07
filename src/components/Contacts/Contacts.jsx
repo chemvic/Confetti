@@ -1,6 +1,8 @@
+import PropTypes from 'prop-types';
+import MessageForm from 'components/Form/Form';
 import css from './Contacts.module.css';
 import icons from '../../images/icons.svg';
-import MessageForm from 'components/Form/Form';
+
 
 
 const Contacts = ({id}) => {
@@ -48,6 +50,11 @@ const Contacts = ({id}) => {
         </div>
     </section>
   )
-}
+};
+
+Contacts.propTypes = {
+    id: PropTypes.string.isRequired,
+};
+
 
 export default Contacts;

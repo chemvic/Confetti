@@ -5,7 +5,7 @@ import css from './App.module.css';
 import Hero from 'components/Hero/Hero';
 import Background from 'components/Background/Background';
 import AboutUs from 'components/AboutUs/AboutUs';
-import Reviews from 'components/Rewiews/Reviews';
+import Reviews from 'components/Reviews/Reviews';
 import Contacts from 'components/Contacts/Contacts';
 import Footer from 'components/Footer/Footer';
 

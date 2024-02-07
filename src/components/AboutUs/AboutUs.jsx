@@ -1,8 +1,10 @@
+import PropTypes from 'prop-types';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import css from './AboutUs.module.css';
 import CardAbout from 'components/CardAbout/CardAbout';
+import cards from './cardAbout.json';
 
 const AboutUs = ({id}) => {
     const settings = {
@@ -16,7 +18,7 @@ const AboutUs = ({id}) => {
         swipeToSlide: true
  
       };
-    
+      
   return (
     <section id={id} className={css.section}>
         <div className={css.wrapper}>
@@ -30,17 +32,17 @@ const AboutUs = ({id}) => {
 
         {window.innerWidth < 768 ? (
           <Slider {...settings} style={{ width: '100%' }} >       
-            <div><CardAbout title='Kreatywne podejście i dbałość o szczegóły' text='Specjaliści zapewniają doradztwo i kreatywność przy wyborze dekoracji balonowych, z dbałością o szczegóły' bgcolor='#ED4B5E'/></div>
-            <div><CardAbout title='Materiały przyjazne dla środowiska' text='Wykorzystywane są materiały najwyższej jakości, w tym biodegradowalne materiały balonowe, aby pozostawić jak najmniejszy ślad na środowisku.' bgcolor='#222222'/></div>
-            <div><CardAbout title='Szeroka gama kolorów do personalizacji' text='Balony i dekoracje są wybierane z szerokiej gamy kolorów, co pozwala spersonalizować wystrój na każdą okazję.' bgcolor='#444444'/></div>  
-            <div><CardAbout title='Gwarancja dostawy i montażu' text='Firma gwarantuje nie tylko wysokiej jakości dostawę zamówień, ale także ich montaż, zapewniając klientom kompleksową obsługę.' bgcolor='#808080'/></div>       
+            <div><CardAbout title={cards.cards[0].title} text={cards.cards[0].text} bgcolor={cards.cards[0].bgcolor}/></div>
+            <div><CardAbout title={cards.cards[1].title} text={cards.cards[1].text} bgcolor={cards.cards[1].bgcolor}/></div>
+            <div><CardAbout title={cards.cards[2].title} text={cards.cards[2].text} bgcolor={cards.cards[2].bgcolor}/></div>  
+            <div><CardAbout title={cards.cards[3].title} text={cards.cards[3].text} bgcolor={cards.cards[3].bgcolor}/></div>      
           </Slider>
         ) : (
           <div className={css.grid_container}>       
-            <div className={css.card1}><CardAbout title='Kreatywne podejście i dbałość o szczegóły' text='Specjaliści zapewniają doradztwo i kreatywność przy wyborze dekoracji balonowych, z dbałością o szczegóły' bgcolor='#ED4B5E'/></div>
-            <div className={css.card2}><CardAbout title='Materiały przyjazne dla środowiska' text='Wykorzystywane są materiały najwyższej jakości, w tym biodegradowalne materiały balonowe, aby pozostawić jak najmniejszy ślad na środowisku.' bgcolor='#222222'/></div>
-            <div className={css.card3}><CardAbout title='Szeroka gama kolorów do personalizacji' text='Balony i dekoracje są wybierane z szerokiej gamy kolorów, co pozwala spersonalizować wystrój na każdą okazję.' bgcolor='#444444'/></div>  
-            <div className={css.card4}><CardAbout title='Gwarancja dostawy i montażu' text='Firma gwarantuje nie tylko wysokiej jakości dostawę zamówień, ale także ich montaż, zapewniając klientom kompleksową obsługę.' bgcolor='#808080'/></div>       
+            <div className={css.card1}><CardAbout title={cards.cards[0].title} text={cards.cards[0].text} bgcolor={cards.cards[0].bgcolor}/></div>
+            <div className={css.card2}><CardAbout title={cards.cards[1].title} text={cards.cards[1].text} bgcolor={cards.cards[1].bgcolor}/></div>
+            <div className={css.card3}><CardAbout title={cards.cards[2].title} text={cards.cards[2].text} bgcolor={cards.cards[2].bgcolor}/></div>   
+            <div className={css.card4}><CardAbout title={cards.cards[3].title} text={cards.cards[3].text} bgcolor={cards.cards[3].bgcolor}/></div>       
           </div> 
         )}
          
@@ -48,5 +50,7 @@ const AboutUs = ({id}) => {
     </section>
   )
 }
-
+AboutUs.prototypes = {
+    id: PropTypes.string.isRequired,
+}
 export default AboutUs;

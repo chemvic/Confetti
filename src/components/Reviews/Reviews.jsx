@@ -1,8 +1,10 @@
+import PropTypes from 'prop-types';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import css from './Reviews.module.css';
 import icons from '../../images/icons.svg';
+import reviews from './reviewsCards.json';
 
 import CardReview from 'components/CardReview/CardReview';
 
@@ -79,12 +81,14 @@ const Reviews = ({id}) => {
             Recenzje
         </h2>
         <Slider {...settings} style={{ width: '100%' }} >       
-            <div><CardReview text='Baaardzo super ścianka  , dziękuję za współpracę 🫶 ' name='Anetta Ostalczyk'/></div>
-            <div><CardReview text='Jeszcze raz wielkie dzięki! Ciężko nam było foty robić jak ustawili te stoły 🥰 ale sam klimat i dekoracja robiła meegaaa wrażenie! ' name='Aleksandra Murawska'/></div>
-            <div><CardReview text='Ścianka  była piękna , bardzo delikatna , Jeszcze raz bardzo dziękuję  ) ' name='Katia Maksymiw'/></div>  
+            <div><CardReview text={reviews.reviews[0].text} name={reviews.reviews[0].name}/></div>
+            <div><CardReview text={reviews.reviews[1].text} name={reviews.reviews[1].name}/></div>
+            <div><CardReview text={reviews.reviews[2].text} name={reviews.reviews[2].name}/></div> 
         </Slider>
     </section>
   )
 }
-
+Reviews.propTypes = {
+    id: PropTypes.string.isRequired,
+}
 export default Reviews

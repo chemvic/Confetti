@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import css from './Hero.module.css';
 
@@ -12,5 +13,7 @@ const Hero = ({id}) => {
     </section>
   )
 }
-
+Hero.prototypes = {
+  id: PropTypes.string.isRequired,
+}
 export default Hero;
