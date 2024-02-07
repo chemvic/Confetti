@@ -115,6 +115,8 @@ fill: #ED4B5E;
     height: 100%;
     background-color: rgba(255, 239, 240, 0.5);
     z-index: 2;
+    overflow-y: scroll;
+
   } 
   .modal {
     position: fixed;
@@ -128,7 +130,8 @@ fill: #ED4B5E;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    opacity: 0;     
+    opacity: 0; 
+    overflow-y: scroll;    
   }
   
   .modal.open {
