@@ -12,7 +12,6 @@ const schema = Yup.object().shape({
       .test('two-words', 'Wrong Fullname', (value) => {
         return value.split(' ').length >= 2;}),
     email: Yup.string().email('Wrong Email').required('Required'),
-    phone: Yup.number().required('Required').positive('Wrong Phone').integer('Wrong Phone').test('len', 'Wrong Phone', val => val.toString().length >= 11),
     message: Yup.string()   
   });
 
@@ -24,7 +23,6 @@ const MessageForm = () => {
      initialValues={{
         fullName: '',
         email: '',
-        phone: '',
         message: '',
      }}
      validationSchema={schema}
@@ -36,32 +34,22 @@ const MessageForm = () => {
      {({ errors, touched }) => (
        <Form autoComplete='off'>
         <label  htmlFor="fullName">
-        * Full name:            
+        Imię*            
         </label>
-        <Field  className={`${css.input} ${errors.fullName && touched.fullName ? css.error : ''}`} name="fullName" type="text" placeholder="John Rosie"/>
+        <Field  className={`${css.input} ${errors.fullName && touched.fullName ? css.error : ''}`} name="fullName" type="text" placeholder="Imię"/>
         <ErrorMessage name='fullName' component="div" className={css.input_error}/>
         <label htmlFor="email">
-        * E-mail: 
+        E-mail*
         </label>
-        <Field  className={`${css.input} ${errors.email && touched.email ? css.error : ''}`} name="email" type="email" placeholder="johnrosie@gmail.com"/>
+        <Field  className={`${css.input} ${errors.email && touched.email ? css.error : ''}`} name="email" type="email" placeholder="mail@gmail.com"/>
         <ErrorMessage name='email' component="div" className={css.input_error}/>
-        <label htmlFor="phone">
-        * Phone:   
-        </label>
-        <Field  className={`${css.input} ${errors.phone && touched.phone ? css.error : ''}`} name="phone" type="number" placeholder="380961234567"/>
-        <ErrorMessage name='phone' component="div" className={css.input_error}/>        
         <label htmlFor="message">
-        Message:              
+        Wiadomość              
         </label>
-       <Field  className={css.input_textarea} name="message" as="textarea" type="text" placeholder="Your message"/>
+       <Field  className={css.input_textarea} name="message" as="textarea" type="text" placeholder="Twoja wiadomość..."/>
 
         <button className={css.button} type='submit' >
-           Send 
-           <div className={css.icon_wrapper}>
-            <svg className={css.icon}>
-                <use href={`${icons}#icon-arrow-right`} />
-            </svg>
-           </div>
+        Wyślij           
         </button> 
         
        </Form>)}
