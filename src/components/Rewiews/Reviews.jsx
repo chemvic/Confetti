@@ -10,7 +10,7 @@ function SampleNextArrow(props) {
     const { onClick } = props;
     return (
       <div className={css.next_button}>   
-        <button className={css.button} onClick={onClick}>
+        <button className={css.button}  type='button' onClick={onClick}>
             <svg className={css.icon}>
                 <use href={`${icons}#icon-arrow-right`} />
             </svg>
@@ -23,7 +23,7 @@ function SampleNextArrow(props) {
     const { onClick } = props;
     return (
       <div className={css.prev_button}>    
-        <button className={css.button} onClick={onClick}>
+        <button className={css.button} type='button' onClick={onClick}>
             <svg className={css.icon}>
                 <use href={`${icons}#icon-arrow-left`} />
             </svg>

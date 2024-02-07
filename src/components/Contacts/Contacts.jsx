@@ -16,7 +16,8 @@ const Contacts = ({id}) => {
                             <div>                                
                                 <a 
                                     className={css.contacts__link}
-                                    href="tel:+48 793 351 407"              
+                                    href="tel:+48 793 351 407"
+                                    aria-label='Numer telefonu do kontaktu z nami'              
                                     >
                                     <svg className={css.icon}>
                                        <use href={`${icons}#icon-call`} />
@@ -29,7 +30,9 @@ const Contacts = ({id}) => {
                             <div>                               
                                 <a 
                                     className={css.contacts__link}
-                                    href="mailto:confettibalony@gmail.com"              
+                                    href="mailto:confettibalony@gmail.com"
+                                    aria-label='Wyślij e-mail, aby się z nami skontaktować'              
+              
                                     >
                                     <svg className={css.icon}>
                                         <use href={`${icons}#icon-sms`} />

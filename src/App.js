@@ -1,3 +1,5 @@
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import Header from 'components/Header/Header';
 import css from './App.module.css';
 import Hero from 'components/Hero/Hero';
@@ -17,6 +19,8 @@ function App() {
       <Reviews id="rewiews"/>
       <Contacts id="contacts"/>
       <Footer/>
+      <ToastContainer autoClose={1000}/>
+
     </div>
   );
 }

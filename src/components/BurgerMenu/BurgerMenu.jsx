@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import css from './BurgerMenu.module.css';
 import icons from '../../images/icons.svg';
 import BurgerLink from 'components/BurgerLink/BurgerLink';
@@ -15,12 +15,27 @@ const BurgerMenu = ({scrolled}) => {
     setIsOpen(false);
     document.body.style.overflow = 'visible';
   };
+  useEffect(()=>{
+    const handleEsc =(event)=>{
+      if(event.keyCode === 27){
+        closeMenu();
+      }
+    };
+    if(isOpen){
+      document.addEventListener('keydown', handleEsc);
+    } else {
+      document.removeEventListener('keydown', handleEsc);
+    };
+    return ()=>{
+            document.removeEventListener('keydown', handleEsc);
+    };
+  },[isOpen])
 
   return (
     <div>
       <div className={css.menu_wrapper}>
       <span className={`${css.menu} ${scrolled ? css.scrolled : ''}`}>Menu</span>
-      <button className={css.burger_button} onClick={openMenu}>
+      <button className={css.burger_button}  type='button' onClick={openMenu}>
         
         <svg className={css.menu_icon}>
           <use href={`${icons}#icon-burger`} />
@@ -39,7 +54,7 @@ const BurgerMenu = ({scrolled}) => {
            </div>
            <div>
 
-            <button className={css.close_button} onClick={closeMenu}>
+            <button className={css.close_button}  type='button' onClick={closeMenu}>
             <svg className={css.close_icon}>
               <use href={`${icons}#icon-close`} />
             </svg> close

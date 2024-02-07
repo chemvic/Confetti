@@ -5,7 +5,7 @@ import css from './Logo.module.css';
 const Logo = () => {
   return (
     <div>
-        <a href='/' className={css.logo}>
+        <a href='/' className={css.logo} aria-label='Strona główna'>
         <svg className={css.logo_icon}>
             <use href={`${icons}#icon-logo`} />
         </svg>
