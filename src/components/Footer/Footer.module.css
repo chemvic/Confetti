@@ -1,0 +1,62 @@
+.firm__trade{
+    font-family:'Inter';
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.01em;
+    line-height: 100%;
+    color: #222222;
+}
+.footer{
+    position: relative;
+    display:flex;
+    justify-content: space-between;
+    padding: 32px 0;
+}
+.footer::before{
+    position: absolute;
+    content: '';
+    top: 0px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #ED4B5E;
+
+}
+@media only screen and (min-width: 360px) and (max-width: 480px) {
+    .section {
+      padding:  40px 0 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+   
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .section {
+      padding:  40px 0 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .footer{
+        padding: 24px 0;
+    }
+   
+}
+
+  @media screen and (min-width: 768px) {
+    .section {
+     padding:  40px 0 0;
+    }
+    
+}
+    
+  @media screen and (min-width: 1440px) {
+    .section {
+     padding:  50px 0 0;
+    }
+    
+  
+}
+

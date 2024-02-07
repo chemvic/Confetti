@@ -116,7 +116,7 @@ fill: #ED4B5E;
 .header_wrapper{
     display: flex;
     text-align: center;
-    /* align-items: center; */
+    align-items: center;
     justify-content: space-between;
     width: 100%;
 
