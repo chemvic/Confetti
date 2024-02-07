@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/confetti/static/css/main.1c7c19c2.css",
-    "main.js": "/confetti/static/js/main.31f30c04.js",
+    "main.js": "/confetti/static/js/main.d8fd492d.js",
     "static/media/desktop@2x.jpg": "/confetti/static/media/desktop@2x.37345143a926467618f6.jpg",
     "static/media/tablet@2x.jpg": "/confetti/static/media/tablet@2x.95de24de29ed611a38e7.jpg",
     "static/media/mobile@2x.jpg": "/confetti/static/media/mobile@2x.c520dc4248aff8cd4e67.jpg",
@@ -16,10 +16,10 @@
     "static/media/slick.woff": "/confetti/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/confetti/index.html",
     "main.1c7c19c2.css.map": "/confetti/static/css/main.1c7c19c2.css.map",
-    "main.31f30c04.js.map": "/confetti/static/js/main.31f30c04.js.map"
+    "main.d8fd492d.js.map": "/confetti/static/js/main.d8fd492d.js.map"
   },
   "entrypoints": [
     "static/css/main.1c7c19c2.css",
-    "static/js/main.31f30c04.js"
+    "static/js/main.d8fd492d.js"
   ]
 }
