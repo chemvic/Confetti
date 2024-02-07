@@ -1,0 +1,149 @@
+.form{
+    position: relative;
+    width: 320px;
+    height: 559px;
+    padding: 36px 12px;
+    background-color: #EAEDF1;
+  }
+label {
+    display: block;
+    font-family: 'FiraSans';
+    font-size: 16px;
+    font-style: normal;
+    letter-spacing: -0.04em;
+    color: #173D33;
+    margin-bottom: 8px;
+  }
+  label:not(:first-child){
+    margin-top: 28px;
+  }
+  .input{
+    width: 100%;
+    height: 31px;
+    background-color: #EAEDF1;
+    border: none;
+    border-bottom: 1px solid #97D28B;
+    transition: border-bottom-color 0.3s ease;
+  }
+.input::placeholder, .input_textarea::placeholder{
+    font-family: 'FiraSans';
+    font-size: 18px;
+    font-style: normal;
+    letter-spacing: -0.04em;
+    color:#BDBDBD;  
+}
+.input.error {
+    border-bottom-color: #D28B8B;
+  }
+  
+  .input_error {
+    font-family: 'FiraSans';
+    font-size: 12px;
+    font-style: normal;
+    letter-spacing: -0.04em;
+    color: #D28B8B;
+    margin-bottom: 2px;
+    margin-left: auto;
+    text-align: end;
+  }
+ 
+  .input.touched {
+    border-bottom-color: #97D28B;
+  }
+
+.input_textarea{
+    height: 147px;
+    resize: none;
+    width: 100%;
+    margin-bottom: auto;
+    background-color: #EAEDF1;
+    border: none;
+    border-bottom: 1px solid #97D28B;
+}
+
+.icon_wrapper{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color:#97D28B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.icon{
+    fill: #173d33;
+    width: 36px;
+    height: 36px;
+}
+.button{ 
+    position: absolute;
+    right: 12px;
+    bottom: 36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3.5px 3.5px 3.5px 16px;
+    font-family: 'FiraSans';
+    font-size: 16px;
+    font-style: normal;
+    width: 99px;
+    height: 39px;
+    color:#173D33;
+    background-color: #EAEDF1;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;         
+    border-radius: 20px;
+    border: 1px solid #97D28B;  
+    -webkit-transition-property: background-color color;
+    transition-property:background-color color ;
+    -webkit-transition-duration: .3s;
+            transition-duration: .3s;
+    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .button:hover {
+    background-color: #173D33; 
+    color:#97D28B ;
+    border-color: #173D33;
+    }
+
+    @media screen and (min-width: 768px) {
+        .form{
+            width: 342px;
+            height: 559px;
+            padding: 36px 24px;
+            }
+            .button{             
+                right: 24px;  
+        }
+        .input_textarea{
+            height: 174px;
+        } 
+       
+    }
+
+    @media screen and (min-width: 1440px) {
+        .form{
+            width: 596px;
+            height: 623px;
+            padding: 48px;
+            }
+        .input::placeholder{ 
+            font-size: 20px;           
+        }
+        .button{             
+            right: 48px;
+            bottom: 48px;  
+        }
+        label{
+            margin-bottom: 12px;
+        }
+        .input{
+            height: 33px;
+        }
+        .input_textarea{
+            height: 180px;
+        }    
+    }

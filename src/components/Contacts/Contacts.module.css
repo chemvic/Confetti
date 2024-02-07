@@ -1,0 +1,157 @@
+
+.title{
+    font-family: 'AnzeigenGroT';
+    font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: -0.01em;
+    line-height: 110%;
+    text-align: center;
+    color: #ED4B5E ;
+    margin-bottom: 36px;
+}
+.firmInfo{
+    font-family: 'AnzeigenGroT';
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: -0.01em;
+    line-height: 90%;
+    text-align: center;
+    color: #222222 ;
+    margin-bottom: 24px;
+    
+}
+.contacts{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+.contacts_wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 36px;
+
+}
+.contacts_list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* width: 244px; */
+}
+.icon{
+    fill: #222222;
+    width: 24px;
+    height: 24px;
+    -webkit-transition-property: fill;
+    transition-property: fill;
+    -webkit-transition-duration: .3s;
+            transition-duration: .3s;
+    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            margin-right: 8px;
+}
+
+.contacts_item:not(:last-child){
+    margin-bottom: 16px;
+}
+.contacts_item:hover .contacts__link,
+.contacts_item:focus .contacts__link,
+.contacts_item:hover .icon,
+.contacts_item:focus .icon {
+ 
+  color: #ED4B5E;
+  fill: #ED4B5E;
+}
+
+.contacts__link{
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 20px;
+    font-style: normal;
+    line-height: 100%;
+    color: #565148;
+    display: flex; 
+    justify-content: flex-start;
+    align-items: center;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: .3s;
+            transition-duration: .3s;
+    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media only screen and (min-width: 360px) and (max-width: 480px) {
+    .section {
+      padding:  40px 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+   
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .section {
+      padding:  40px 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+   
+}
+
+  @media screen and (min-width: 768px) {
+    .section {
+     padding:  144px 0 40px;
+    }
+    .title {
+        font-size: 48px;
+        margin-bottom: 24px;
+    }
+    .firmInfo{
+        font-size: 24px;       
+        line-height: 120%;
+        margin-bottom: 24px;        
+    }
+    .contacts__link{
+        font-size: 24px;       
+    }
+    .contacts_wrapper{
+        margin-bottom: 88px;    
+    }
+   
+}
+    
+  @media screen and (min-width: 1440px) {
+    .section {
+     padding:  50px 0;
+    }
+    .contacts{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .contacts_wrapper{
+       align-items: flex-start;    
+    }
+    .title {
+        font-size: 100px;
+        line-height: 95%;
+        margin-bottom: 56px;
+    }
+    .firmInfo{
+        text-align: left;
+        font-size: 40px;       
+        line-height: 95%;
+        margin-bottom: 32px;        
+    }
+    .contacts_list{
+        align-items: flex-start;
+        /* width: 466px; */
+    }
+    .contacts__link{
+        font-size: 24px;       
+    }
+  
+}
