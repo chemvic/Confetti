@@ -26,8 +26,8 @@ const MessageForm = () => {
      }}
      validationSchema={schema}
      onSubmit={(values, {resetForm}) => {
-          console.log(values);
-          resetForm();
+      localStorage.setItem('formValues', JSON.stringify(values)); 
+      resetForm();
      }}
    >
      {({ errors, touched }) => (
