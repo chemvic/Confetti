@@ -4,13 +4,13 @@ import * as Yup from 'yup';
 import css from './Form.module.css';
 
 const schema = Yup.object().shape({
-    fullName: Yup.string('Wrong Fullname')
-      .min(2, 'Wrong Fullname')
-      .max(50, 'Wrong Fullname')
-      .required('Required').matches(/^[а-яА-Яa-zA-Z\s]*$/, 'Wrong Fullname')
-      .test('two-words', 'Wrong Fullname', (value) => {
+    fullName: Yup.string('Nieprawidłowe Іmię')
+      .min(2, 'Nieprawidłowe Іmię')
+      .max(50, 'Nieprawidłowe Іmię')
+      .required('Wymagany').matches(/^[а-яА-Яa-zA-Z\s]*$/, 'Nieprawidłowe Іmię')
+      .test('two-words', 'Nieprawidłowe Іmię', (value) => {
         return value.split(' ').length >= 2;}),
-    email: Yup.string().email('Wrong Email').required('Required'),
+    email: Yup.string().email('Nieprawidłowy email').required('Wymagany'),
     message: Yup.string()   
   });
 
@@ -36,12 +36,12 @@ const MessageForm = () => {
         Imię*            
         </label>
         <Field  className={`${css.input} ${errors.fullName && touched.fullName ? css.error : ''}`} name="fullName" type="text" placeholder="Imię"/>
-        <ErrorMessage name='fullName' component="div" className={css.input_error}/>
+        <ErrorMessage name='fullName' component="div" className={css.input_error} style={{ top: `${window.innerWidth >= 768 ? '155px' : '150px'}`, right: `${window.innerWidth >= 768 ? '106px' : '44px'}` }}/>
         <label htmlFor="email">
         E-mail*
         </label>
         <Field  className={`${css.input} ${errors.email && touched.email ? css.error : ''}`} name="email" type="email" placeholder="mail@gmail.com"/>
-        <ErrorMessage name='email' component="div" className={css.input_error}/>
+        <ErrorMessage name='email' component="div" className={css.input_error} style={{ top: `${window.innerWidth >= 768 ? '279px' : '265px'}`, right: `${window.innerWidth >= 768 ? '106px' : '44px'}` }}/>
         <label htmlFor="message">
         Wiadomość              
         </label>
