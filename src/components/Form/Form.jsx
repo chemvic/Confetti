@@ -2,7 +2,6 @@
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import css from './Form.module.css';
-import icons from '../../images/icons.svg';
 
 const schema = Yup.object().shape({
     fullName: Yup.string('Wrong Fullname')
