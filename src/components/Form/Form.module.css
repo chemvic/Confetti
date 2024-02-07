@@ -48,16 +48,27 @@ label {
     letter-spacing: -0.01em;
     color:#888888;  
 }
+.input_textarea::placeholder{
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 18px;
+    font-style: normal;
+    letter-spacing: -0.01em;
+    color:#888888;  
+}
   
   .input_error {
     font-family: 'Inter';
     font-weight: 500;
     font-size: 14px;
     letter-spacing: -0.01em;
-    color: #D28B8B;
+    color: #ED4B5E;
     margin-bottom: 2px;
     margin-left: auto;
     text-align: end;
+  }
+  .input.error {
+    color: #ED4B5E;
   }
  
   .input.touched {
