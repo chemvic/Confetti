@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/confetti/static/css/main.725a5db3.css",
-    "main.js": "/confetti/static/js/main.d5021766.js",
+    "main.css": "/confetti/static/css/main.545a6424.css",
+    "main.js": "/confetti/static/js/main.311b4497.js",
     "static/media/desktop@2x.jpg": "/confetti/static/media/desktop@2x.37345143a926467618f6.jpg",
     "static/media/tablet@2x.jpg": "/confetti/static/media/tablet@2x.95de24de29ed611a38e7.jpg",
     "static/media/mobile@2x.jpg": "/confetti/static/media/mobile@2x.c520dc4248aff8cd4e67.jpg",
     "static/media/Inter-Medium.ttf": "/confetti/static/media/Inter-Medium.3f7acfe50aad7ad68548.ttf",
     "static/media/AnzeigenGroT.ttf": "/confetti/static/media/AnzeigenGroT.dae2c3dbd029cb8e25f3.ttf",
-    "static/media/icons.svg": "/confetti/static/media/icons.b522807bcd5443d8af765da1e97a296b.svg",
+    "static/media/icons.svg": "/confetti/static/media/icons.34b695c7f3f82f49d56007c5c0ae2751.svg",
     "static/media/slick.svg": "/confetti/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/confetti/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/confetti/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/confetti/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/confetti/index.html",
-    "main.725a5db3.css.map": "/confetti/static/css/main.725a5db3.css.map",
-    "main.d5021766.js.map": "/confetti/static/js/main.d5021766.js.map"
+    "main.545a6424.css.map": "/confetti/static/css/main.545a6424.css.map",
+    "main.311b4497.js.map": "/confetti/static/js/main.311b4497.js.map"
   },
   "entrypoints": [
-    "static/css/main.725a5db3.css",
-    "static/js/main.d5021766.js"
+    "static/css/main.545a6424.css",
+    "static/js/main.311b4497.js"
   ]
 }
