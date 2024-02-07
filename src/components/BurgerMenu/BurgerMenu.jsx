@@ -35,55 +35,52 @@ const BurgerMenu = ({scrolled}) => {
   return (
     <div>
       <div className={css.menu_wrapper}>
-      <span className={`${css.menu} ${scrolled ? css.scrolled : ''}`}>Menu</span>
-      <button className={css.burger_button}  type='button' onClick={openMenu}>
-        
-        <svg className={css.menu_icon}>
-          <use href={`${icons}#icon-burger`} />
-        </svg>
-      </button>
+        <span className={`${css.menu} ${scrolled ? css.scrolled : ''}`}>Menu</span>
+        <button className={css.burger_button}  type='button' onClick={openMenu}>        
+            <svg className={css.menu_icon}>
+              <use href={`${icons}#icon-burger`} />
+            </svg>
+        </button>
       </div>
+
       {isOpen && (
         <>
           <div className={css.overlay} onClick={closeMenu}></div>
           <div className={`${css.modal} ${isOpen ?css.open: ''}`}>
-           <div className={css.header_wrapper}> 
-           <div>
-            <a href='/' className={css.logo}>
-            CONFETTI
-           </a>
-           </div>
-           <div>
-
-            <button className={css.close_button}  type='button' onClick={closeMenu}>
-            <svg className={css.close_icon}>
-              <use href={`${icons}#icon-close`} />
-            </svg> close
-          </button>
-           </div>
+            <div className={css.header_wrapper}> 
+                <div>
+                    <a href='/' className={css.logo} aria-label='Strona główna' >
+                        CONFETTI
+                    </a>
+                </div>
+                <div>
+                  <button className={css.close_button} type='button' onClick={closeMenu} aria-label='Zamknij menu'>
+                    <svg className={css.close_icon}>
+                        <use href={`${icons}#icon-close`} />
+                    </svg>
+                  </button>
+                </div>
             
-          </div>          
-          <div className={css.modal_wrapper}>           
+            </div>          
+            <div className={css.modal_wrapper}>           
               <nav>
                 <ul className={css.modal_list}>
                   <li className={css.modal_item}>
-                  <BurgerLink text='Główna' closeMenu={closeMenu} link='hero'/>
+                      <BurgerLink text='Główna' closeMenu={closeMenu} link='hero'/>
                   </li>
                   <li className={css.modal_item}>
-                  <BurgerLink text='O nas' closeMenu={closeMenu} link='about'/>
+                      <BurgerLink text='O nas' closeMenu={closeMenu} link='about'/>
                   </li>
                   <li className={css.modal_item}>
-                  <BurgerLink text='Recenzje' closeMenu={closeMenu} link='rewiews'/>
+                      <BurgerLink text='Recenzje' closeMenu={closeMenu} link='rewiews'/>
                   </li>
                   <li className={css.modal_item}>
-                  <BurgerLink text='Kontakty' closeMenu={closeMenu} link='contacts'/>
+                      <BurgerLink text='Kontakty' closeMenu={closeMenu} link='contacts'/>
                   </li>              
                 </ul>
               </nav>
-            </div>
-          
-                          
-        </div>
+            </div>                         
+          </div>
         </>
       )}
     </div>
