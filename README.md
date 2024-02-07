@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+Project "Confetti"
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The "Confetti" project is a web application  introducing a company engaged in decorating events using balloons фтв for displaying customer reviews. The application uses the React library and the React Slick library to create a carousel of reviews. Also application uses CSS GRID  technology for an interesting implementation of placing cards on a website page. 
 
-## Available Scripts
+Features
+Displaying customer reviews in a carousel format.
+Support for responsive design for various devices.
+Custom arrow buttons for navigating the carousel.
+Using pagination dots for navigating throught reviews cards.
 
-In the project directory, you can run:
+Installation
+1. Clone the repository to your local machine:
 
-### `npm start`
+git clone https://github.com/chemvic/confetti.git
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. Navigate to the project directory:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+cd confetti
 
-### `npm test`
+3. Install dependencies:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+npm install
 
-### `npm run build`
+4. Start the project:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+npm start
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Usage
+Еhe application greets you with a beautiful, related interface reflecting the work of this polish company.
+The application automatically displays list of services and approaches to the company's work and customer reviews in a carousel format if you are using a mobile device. Or from tablet to desktop you can get acquainted with information about the company in the form of conveniently located cards.
+Use the "Next" and "Previous" buttons to navigate through the reviews on tablet devices. 
+And of cource you can contact the company or leave your message using a convenient contact form.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Contributions
+If you would like to contribute to the project, feel free to create an issue or submit a pull request on GitHub.
