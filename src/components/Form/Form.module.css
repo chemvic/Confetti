@@ -1,47 +1,59 @@
 .form{
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-between; */
-    width: 320px;
-    height: 559px;
-    padding: 36px 12px;
+    position: relative;
+    box-sizing: border-box;
+    width: 360px;
+    height: 569px;
+    padding: 51px 20px;
     background-color: #FFEFF0;
   }
+  
 label {
     display: block;
-    font-family: 'FiraSans';
+    margin-left: 24px;
+    font-family: 'Inter';
+    font-weight: 500;
     font-size: 16px;
-    font-style: normal;
-    letter-spacing: -0.04em;
-    color: #222222;
+    letter-spacing: -0.01em;
+    color: #949494;
     margin-bottom: 8px;
   }
-  label:not(:first-child){
-    margin-top: 28px;
-  }
+ 
   .input{
+    box-sizing: border-box;
     width: 100%;
-    height: 31px;
+    height: 62px;
+    padding: 20px 24px;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: -0.01em;
+    color:#222222;  
     background-color: #fff;
-    border: none;
-    transition: border-bottom-color 0.3s ease;
+    border: 1px solid #D2D2D2;
+    border-radius: 9px;
+    transition: border-color 0.3s ease;
+    margin-bottom: 24px;
+  }
+  .input:hover,
+  .input:focus,
+  .input_textarea:hover,
+  .input_textarea:focus  {
+    border-color:#ED4B5E;
   }
 .input::placeholder, .input_textarea::placeholder{
-    font-family: 'FiraSans';
+    font-family: 'Inter';
+    font-weight: 500;
     font-size: 18px;
     font-style: normal;
-    letter-spacing: -0.04em;
-    color:#BDBDBD;  
+    letter-spacing: -0.01em;
+    color:#888888;  
 }
-.input.error {
-    border-bottom-color: #D28B8B;
-  }
   
   .input_error {
-    font-family: 'FiraSans';
-    font-size: 12px;
-    font-style: normal;
-    letter-spacing: -0.04em;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: -0.01em;
     color: #D28B8B;
     margin-bottom: 2px;
     margin-left: auto;
@@ -49,19 +61,30 @@ label {
   }
  
   .input.touched {
-    border-bottom-color: #ED4B5E;
+    border-color: #ED4B5E;
   }
 
 .input_textarea{
-    height: 147px;
+    box-sizing: border-box;
+    height: 128px;
     resize: none;
     width: 100%;
+    padding: 20px 24px;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: -0.01em;
+    color:#222222; 
     margin-bottom: auto;
     background-color: #fff;
-    border: none;
-}
+    border: 1px solid #D2D2D2;
+    border-radius: 9px;
+    transition: border-color 0.3s ease;
+    margin-bottom: 24px;
+  }
 
 .button{ 
+    box-sizing: border-box;
     padding: 20px auto;
     font-family: 'AnzeigenGroT';
     font-size: 28px;
@@ -75,16 +98,18 @@ label {
     cursor: pointer;
     text-align: center;         
     border-radius: 24px;
-    border: none; 
-    -webkit-transition-property: background-color color;
-    transition-property:background-color color ;
+    border: none;
+    outline: 2px solid transparent; 
+    -webkit-transition-property: outline-color ;
+    transition-property:outline-color  ;
     -webkit-transition-duration: .3s;
             transition-duration: .3s;
     -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
-    .button:hover {
-    background-color: #d1061e; 
+    .button:hover,
+    .button:focus {
+        outline-color: #222222; 
     }
 
     @media screen and (min-width: 768px) {
@@ -93,32 +118,51 @@ label {
             height: 634px;
             border-radius: 24px;
             padding: 57px 82px;
-            }
-            .button{             
-                right: 24px;  
+        }
+        .form::before{
+            content:'';
+            position: absolute;
+            transform: rotate(-38deg);
+            top: -180px;
+            left: -252px;           
+            width:690px;
+            height:700px;
+            background-image: url('../../images/ballons1@2x.jpg');
+            background-size: cover;
+            z-index: -1;
+          }
+          .form::after{
+            content:'';
+            position: absolute;
+            transform: rotate(-9deg);
+            top: 130px;
+            right: -130px;
+            width: 450px;
+            height: 470px;
+            background-image: url('../../images/ballons2@2x.jpg');
+            background-size: cover;
+            z-index: -1;
+          }
+            
+        .button{             
+            font-size: 40px;
+            padding: 24px auto;      
+        }
+        .input{
+            margin-bottom: 32px;
+            font-size: 20px;
+
+        }
+         .input::placeholder,
+         .input_textarea::placeholder{ 
+            font-size: 20px;           
         }
         .input_textarea{
-            height: 174px;
+            height: 136px;
+            font-size: 20px;
+            margin-bottom: 32px;
         } 
         
     }
 
-    @media screen and (min-width: 1440px) {
-     
-        .input::placeholder{ 
-            font-size: 20px;           
-        }
-        .button{             
-            right: 48px;
-            bottom: 48px;  
-        }
-        label{
-            margin-bottom: 12px;
-        }
-        .input{
-            height: 33px;
-        }
-        .input_textarea{
-            height: 180px;
-        }    
-    }
+   
