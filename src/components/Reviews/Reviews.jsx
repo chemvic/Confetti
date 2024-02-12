@@ -79,16 +79,22 @@ const Reviews = ({id}) => {
     <section id={id} className={css.section}>
         <h2 className={css.title}>
             Recenzje
-        </h2>
-        <Slider {...settings} style={{ width: '100%' }} >       
-            <div><CardReview text={reviews.reviews[0].text} name={reviews.reviews[0].name}/></div>
-            <div><CardReview text={reviews.reviews[1].text} name={reviews.reviews[1].name}/></div>
-            <div><CardReview text={reviews.reviews[2].text} name={reviews.reviews[2].name}/></div> 
-        </Slider>
+        </h2>       
+        <Slider {...settings} style={{ width: '100%' }} >
+          {reviews.map(({text, name})=>(
+            <div key={name}>
+              <CardReview text={text} name={name}/>
+            </div>
+          ))}
+        </Slider>     
+
     </section>
   )
 }
+
+
 Reviews.propTypes = {
     id: PropTypes.string.isRequired,
+    reviews: PropTypes.array.isRequired
 }
 export default Reviews

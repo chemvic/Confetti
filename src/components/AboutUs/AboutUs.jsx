@@ -2,11 +2,28 @@ import PropTypes from 'prop-types';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import { useEffect, useState } from 'react';
 import css from './AboutUs.module.css';
 import CardAbout from 'components/CardAbout/CardAbout';
 import cards from './cardAbout.json';
 
 const AboutUs = ({id}) => {
+
+const [isMobile, setIsMobile] = useState(window.innerWidth<768);
+
+  useEffect(()=>{
+
+    const handleWidth = () =>{
+      setIsMobile(window.innerWidth<768);
+    };
+
+    window.addEventListener('resize', handleWidth);
+
+    return ()=>{
+      window.removeEventListener('resize', handleWidth);
+    }
+  },[]);
+
     const settings = {
         lazyLoad: true,
         infinite: true,
@@ -30,27 +47,30 @@ const AboutUs = ({id}) => {
            </p>
         </div>
 
-        {window.innerWidth < 768 ? (
+        {isMobile ? (
           <Slider {...settings} style={{ width: '100%' }} >       
-            <div><CardAbout title={cards.cards[0].title} text={cards.cards[0].text} bgcolor={cards.cards[0].bgcolor}/></div>
-            <div><CardAbout title={cards.cards[1].title} text={cards.cards[1].text} bgcolor={cards.cards[1].bgcolor}/></div>
-            <div><CardAbout title={cards.cards[2].title} text={cards.cards[2].text} bgcolor={cards.cards[2].bgcolor}/></div>  
-            <div><CardAbout title={cards.cards[3].title} text={cards.cards[3].text} bgcolor={cards.cards[3].bgcolor}/></div>      
+           {cards.map(({title, text, bgcolor})=>(
+              <div key={title}>
+                <CardAbout title={title} text={text} bgcolor={bgcolor}/>
+              </div>
+            ))}    
+          
           </Slider>
         ) : (
-          <div className={css.grid_container}>       
-            <div className={css.card1}><CardAbout title={cards.cards[0].title} text={cards.cards[0].text} bgcolor={cards.cards[0].bgcolor}/></div>
-            <div className={css.card2}><CardAbout title={cards.cards[1].title} text={cards.cards[1].text} bgcolor={cards.cards[1].bgcolor}/></div>
-            <div className={css.card3}><CardAbout title={cards.cards[2].title} text={cards.cards[2].text} bgcolor={cards.cards[2].bgcolor}/></div>   
-            <div className={css.card4}><CardAbout title={cards.cards[3].title} text={cards.cards[3].text} bgcolor={cards.cards[3].bgcolor}/></div>       
+          <div className={css.grid_container}>            
+            {cards.map(({title, text, bgcolor})=>(
+              <div key={title}>
+                <CardAbout title={title} text={text} bgcolor={bgcolor}/>
+              </div>
+            ))}       
           </div> 
-        )}
-         
+        )}    
 
     </section>
   )
 }
 AboutUs.prototypes = {
     id: PropTypes.string.isRequired,
+    cards: PropTypes.array.isRequired
 }
 export default AboutUs;
