@@ -95,6 +95,5 @@ const Reviews = ({id}) => {
 
 Reviews.propTypes = {
     id: PropTypes.string.isRequired,
-    reviews: PropTypes.array.isRequired
 }
 export default Reviews

@@ -144,6 +144,9 @@ fill: #ED4B5E;
     align-items: center;
     justify-content: center;
 }
+.modal_item{
+    cursor: pointer;
+}
 .modal_item:not(:last-child){
     margin-bottom: 24px;
 }
