@@ -80,7 +80,7 @@ const Reviews = ({id}) => {
         <h2 className={css.title}>
             Recenzje
         </h2>       
-        <Slider {...settings} style={{ width: '100%' }} >
+        <Slider {...settings} style={{ width: '100%' }}  >
           {reviews.map(({text, name})=>(
             <div key={name}>
               <CardReview text={text} name={name}/>

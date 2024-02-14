@@ -4,10 +4,10 @@ import css from './Footer.module.css';
 const Footer = () => {
   return (
     <section className={css.section}>
-        <div className={css.footer}>
+        <footer className={css.footer}>
           <Logo/>
           <p className={css.firm__trade}>confetti © 2023</p>
-        </div> 
+        </footer> 
     </section>
   )
 }

@@ -7,9 +7,7 @@ const schema = Yup.object().shape({
     fullName: Yup.string('Nieprawidłowe Іmię')
       .min(2, 'Nieprawidłowe Іmię')
       .max(50, 'Nieprawidłowe Іmię')
-      .required('Wymagany').matches(/^[а-яА-Яa-zA-Z\s]*$/, 'Nieprawidłowe Іmię')
-      .test('two-words', 'Nieprawidłowe Іmię', (value) => {
-        return value.split(' ').length >= 2;}),
+      .required('Wymagany').matches(/^[а-яА-Яa-zA-ZąćęłńóśźżĄĆĘŁŃÓŚŹŻіІїЇєЄґҐёЁ\s]*$/, 'Nieprawidłowe Іmię'),      
     email: Yup.string().email('Nieprawidłowy email').required('Wymagany'),
     message: Yup.string()   
   });
