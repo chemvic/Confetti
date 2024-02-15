@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
-import css from './CardReview.module.css';
 import icons from '../../images/icons.svg';
-
+import css from './CardReview.module.css';
 
 const CardReview = ({text, name}) => {
    return (

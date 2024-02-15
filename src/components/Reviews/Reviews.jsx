@@ -2,9 +2,9 @@ import PropTypes from 'prop-types';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import css from './Reviews.module.css';
 import icons from '../../images/icons.svg';
 import reviews from './reviewsCards.json';
+import css from './Reviews.module.css';
 
 import CardReview from 'components/CardReview/CardReview';
 
@@ -77,6 +77,7 @@ const Reviews = ({id}) => {
       };
   return (
     <section id={id} className={css.section}>
+      <div className={css.container}>
         <h2 className={css.title}>
             Recenzje
         </h2>       
@@ -86,8 +87,8 @@ const Reviews = ({id}) => {
               <CardReview text={text} name={name}/>
             </div>
           ))}
-        </Slider>     
-
+        </Slider>
+      </div>    
     </section>
   )
 }

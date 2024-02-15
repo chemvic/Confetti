@@ -4,6 +4,7 @@ import css from './Hero.module.css';
 
 const Hero = ({id}) => {
   return (
+    <div className={css.container}>
     <section id={id} className={css.section}>
     
             <div className={css.wrapper}>
@@ -11,6 +12,7 @@ const Hero = ({id}) => {
             </div>
         
     </section>
+    </div>
   )
 }
 Hero.prototypes = {

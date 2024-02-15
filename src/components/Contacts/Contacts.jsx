@@ -1,14 +1,15 @@
 import PropTypes from 'prop-types';
 import MessageForm from 'components/Form/Form';
-import css from './Contacts.module.css';
 import icons from '../../images/icons.svg';
-
+import css from './Contacts.module.css';
 
 
 const Contacts = ({id}) => {
   return (
     <section  className={css.section}>
+        <div className={css.container}>
         <div id={id} className={css.contacts}>
+        
           <div className={css.contacts_wrapper}>
             <h2 className={css.title}>Kontakty</h2>
             <p className={css.firmInfo}>Confetti - Studio<br />Dekoracij Balonami<br />Warszawa</p>
@@ -47,6 +48,7 @@ const Contacts = ({id}) => {
             </address>
           </div>
           <MessageForm/>
+        </div>
         </div>
     </section>
   )

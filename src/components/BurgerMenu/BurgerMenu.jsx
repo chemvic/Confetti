@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
 import React, { useState, useEffect } from 'react';
 import BurgerLink from 'components/BurgerLink/BurgerLink';
-import css from './BurgerMenu.module.css';
 import icons from '../../images/icons.svg';
+import css from './BurgerMenu.module.css';
 
 const BurgerMenu = ({scrolled}) => {
   const [isOpen, setIsOpen] = useState(false);

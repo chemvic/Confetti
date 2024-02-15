@@ -1,7 +1,7 @@
 import {useEffect, useState} from 'react';
-import css from './Header.module.css';
 import Logo from 'components/Logo/Logo';
 import BurgerMenu from 'components/BurgerMenu/BurgerMenu';
+import css from './Header.module.css';
 
 const Header = () => {
     const [scrolled, setScrolled]=useState (false);
@@ -21,13 +21,15 @@ const Header = () => {
    },[]);
 
   return (
-    
+    <div className={css.container}>
     <header className={css.header}> 
+    
         <div className={`${css.logo} ${scrolled ? css.scrolled : ''}`}>
              <Logo/>
         </div>
         <BurgerMenu scrolled={scrolled}/>
-    </header>
+        
+    </header></div>
   )
 }
 

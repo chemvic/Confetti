@@ -11,13 +11,15 @@ import css from './App.module.css';
 
 function App() {
   return (
-    <div className={css.container}>
+    <div className={css.app}>
       <Background/>
       <Header />
+      <main>
       <Hero id="hero"/>
       <AboutUs id="about"/>
       <Reviews id="rewiews"/>
       <Contacts id="contacts"/>
+      </main>
       <Footer/>
       <ToastContainer autoClose={1000}/>
 

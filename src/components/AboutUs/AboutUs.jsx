@@ -3,9 +3,9 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { useEffect, useState } from 'react';
-import css from './AboutUs.module.css';
 import CardAbout from 'components/CardAbout/CardAbout';
 import cards from './cardAbout.json';
+import css from './AboutUs.module.css';
 
 const AboutUs = ({id}) => {
 
@@ -37,7 +37,9 @@ const [isMobile, setIsMobile] = useState(window.innerWidth<768);
       };
       
   return (
+    <div className={css.container}>
     <section id={id} className={css.section}>
+      
         <div className={css.wrapper}>
            <h2 className={css.title}>
                 Kreatywny zespół dekoratorów
@@ -64,9 +66,9 @@ const [isMobile, setIsMobile] = useState(window.innerWidth<768);
               </div>
             ))}       
           </div> 
-        )}    
-
+        )}     
     </section>
+    </div>
   )
 }
 AboutUs.prototypes = {

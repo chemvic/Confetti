@@ -29,11 +29,9 @@
   
   @media screen and (min-width: 768px) {
     .background{
-    background: url('../../images/tablet@2x.jpg');
-   
-     background-repeat: no-repeat;
-    background-size: contain;
-   
+    background: url('../../images/tablet@2x.jpg');   
+    background-repeat: no-repeat;
+    background-size: contain;   
     }
    
     }
