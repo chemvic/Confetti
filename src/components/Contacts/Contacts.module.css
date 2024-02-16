@@ -23,10 +23,10 @@
     }
   }
   
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1280px) {
     .container {
-      width: 1440px;
-      padding: 0 112px;
+      width: 1280px;
+      padding: 0 32px;
     } 
   }
 .title{
@@ -164,7 +164,7 @@
    
 }
     
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1280px) {
     .section {
      padding:  50px 0;
     }

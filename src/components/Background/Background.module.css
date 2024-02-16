@@ -37,7 +37,7 @@
     }
   
   
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1280px) {
     .background{
     background: url('../../images/desktop@2x.jpg');
     background-size: contain;

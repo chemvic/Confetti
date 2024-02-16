@@ -181,7 +181,7 @@ fill: #ED4B5E;
      }
    
    
-   @media screen and (min-width: 1440px) {
+   @media screen and (min-width: 1280px) {
    
    .header_wrapper{
        margin-bottom: 100px;

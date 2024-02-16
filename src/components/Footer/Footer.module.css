@@ -82,14 +82,14 @@
     }   
 }
     
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1280px) {
     .container {
-      width: 1440px;
-      padding: 0 112px;      
+      width: 1280px;
+      padding: 0 32px;      
     }
     .container::before{
-      left: 112px;
-      right: 112px;    
+      left: 32px;
+      right: 32px;    
     }  
 }
 

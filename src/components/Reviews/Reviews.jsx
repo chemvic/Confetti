@@ -46,7 +46,7 @@ const Reviews = ({id}) => {
         swipeToSlide: true,
         responsive: [
             {
-              breakpoint: 1440,
+              breakpoint: 1280,
               settings: {
                 slidesToShow: 2,
                 slidesToScroll: 1,
