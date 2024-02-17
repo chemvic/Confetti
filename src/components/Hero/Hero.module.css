@@ -1,3 +1,4 @@
+@import 'styles/colors.module.css';
 .container {
   box-sizing: border-box;
   margin: 0 auto;
@@ -13,7 +14,7 @@
 }
 
 .span{
-    color: #222222;
+    color: var(--main-color);
 }
 @media  screen and (min-width: 360px) and (max-width: 480px) {
     .section {

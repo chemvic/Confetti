@@ -64,7 +64,7 @@
         margin-bottom: 48px;
     }
     .icon{
-        fill: #222222;
+        fill: var(--main-color);
          width: 24px;
         height: 24px;
         -webkit-transition-property: fill;
@@ -81,9 +81,9 @@
             height: 56px;
             width: 56px;
             border-radius: 50%;
-            border: 1px solid #D2D2D2;
-            background-color: #fff;
-            color: #222222;       
+            border: 1px solid var(--input-border-color);
+            background-color: var( --white-text-color);
+            color: var(--main-color);       
             cursor: pointer
     }
     

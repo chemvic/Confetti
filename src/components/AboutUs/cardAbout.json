@@ -7,7 +7,7 @@
       {
         "title": "Materiały przyjazne dla środowiska",
         "text": "Wykorzystywane są materiały najwyższej jakości, w tym biodegradowalne materiały balonowe, aby pozostawić jak najmniejszy ślad na środowisku.",
-        "bgcolor": "#222222"
+        "bgcolor": "var(--main-color)"
       },
       {
         "title": "Szeroka gama kolorów do personalizacji",

@@ -1,3 +1,4 @@
+@import 'styles/colors.module.css';
 .card{
     box-sizing: border-box;
     display: flex;
@@ -8,7 +9,7 @@
     height: 229px;
     padding:24px;
     border-radius: 24px;
-    background-color: #FFEFF0;
+    background-color: var( --extra-accent-color);
 }
 
   .text{
@@ -18,14 +19,14 @@
     text-transform: uppercase;
     letter-spacing: -0.01em;
     line-height: 130%;
-    color: #222222;
+    color: var(--main-color);
 }
 
 .name{ 
     font-family: 'Inter';
     font-weight: 500;
     font-size: 16px;
-    color: #565148;
+    color: var(--extra-text-color);
     letter-spacing: -0.01em;
 }
 .icon{

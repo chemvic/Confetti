@@ -46,7 +46,7 @@
     letter-spacing: -0.01em;
     line-height: 90%;
     text-align: center;
-    color: #222222 ;
+    color: var(--main-color) ;
     margin-bottom: 24px;
     
 }
@@ -68,7 +68,7 @@
     align-items: center;
 }
 .icon{
-    fill: #222222;
+    fill: var(--main-color);
     width: 24px;
     height: 24px;
     -webkit-transition-property: fill;
@@ -89,7 +89,7 @@
     font-size: 20px;
     letter-spacing: -0.01em;
     line-height: 100%;
-    color: #565148;
+    color: var(--extra-text-color);
     display: flex; 
     justify-content: flex-start;
     align-items: center;
@@ -194,7 +194,7 @@
     }
     .contacts__link{
         font-size: 24px;
-        color:#222222;       
+        color:var(--main-color);       
     }
   
 }

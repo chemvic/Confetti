@@ -3,7 +3,7 @@
     font-size: 24px;
     font-style: normal;
     letter-spacing: -0.01em;
-    color: #222222;
+    color: var(--main-color);
     -webkit-transition-property:color;
     transition-property:color ;
     -webkit-transition-duration: .3s;

@@ -1,10 +1,11 @@
+@import 'styles/colors.module.css';
 .form{
     position: relative;
     box-sizing: border-box;
     width: 360px;
     height: 569px;
     padding: 51px 20px;
-    background-color: #FFEFF0;
+    background-color: var( --extra-accent-color);
   }
   
 label {
@@ -28,9 +29,9 @@ label {
     font-weight: 500;
     font-size: 18px;
     letter-spacing: -0.01em;
-    color:#222222;  
-    background-color: #fff;
-    border: 1px solid #D2D2D2;
+    color:var(--main-color);  
+    background-color: var( --white-text-color);
+    border: 1px solid var(--input-border-color);
     border-radius: 9px;
     transition: border-color 0.3s ease;
     margin-bottom: 24px;
@@ -48,7 +49,7 @@ label {
     font-size: 18px;
     font-style: normal;
     letter-spacing: -0.01em;
-    color:#888888;  
+    color:var(--placeholder-text-color);  
 }
 .input_textarea::placeholder{
     font-family: 'Inter';
@@ -56,7 +57,7 @@ label {
     font-size: 18px;
     font-style: normal;
     letter-spacing: -0.01em;
-    color:#888888;  
+    color:var(--placeholder-text-color);  
 }
   
   .input_error {
@@ -88,10 +89,10 @@ label {
     font-weight: 500;
     font-size: 18px;
     letter-spacing: -0.01em;
-    color:#222222; 
+    color:var(--main-color); 
     margin-bottom: auto;
-    background-color: #fff;
-    border: 1px solid #D2D2D2;
+    background-color: var( --white-text-color);
+    border: 1px solid var(--input-border-color);
     border-radius: 9px;
     transition: border-color 0.3s ease;
     margin-bottom: 24px;
@@ -108,7 +109,7 @@ label {
     line-height: 100%;
     width: 100%;
     height: 62px;
-    color:#fff;
+    color:var( --white-text-color);
     background-color: #ED4B5E;
     cursor: pointer;
     text-align: center;         
@@ -124,7 +125,7 @@ label {
     }
     .button:hover,
     .button:focus {
-        outline-color: #222222; 
+        outline-color: var(--main-color); 
     }
 
     @media screen and (min-width: 768px) {
