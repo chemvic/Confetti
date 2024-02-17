@@ -17,7 +17,7 @@
     font-size: 36px;
     text-transform: uppercase;
     letter-spacing: -0.01em;
-    color: #ED4B5E;
+    color: var(--accent-color);
 }
 .menu{
    opacity: 1;    
@@ -43,8 +43,8 @@
 .menu_wrapper:hover .menu_icon,
 .menu_wrapper:focus .menu_icon {
  
-  color: #ED4B5E;
-  fill: #ED4B5E;
+  color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 
@@ -71,7 +71,7 @@
 }
 
 .burger_button:hover .menu_icon{
-    fill: #ED4B5E;
+    fill: var(--accent-color);
 }
 .close_button{
     display: flex;
@@ -98,7 +98,7 @@
 
 .close_button:hover .close_icon,
 .close_button:focus .close_icon{
-fill: #ED4B5E;
+fill: var(--accent-color);
 }
 
 .header_wrapper{

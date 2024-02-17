@@ -21,9 +21,6 @@
     text-align: center;
     color: var(--extra-text-color) ;
 }
-.slick-dots li button {
-    padding: 36px;
-}
 
 @media  screen and (min-width: 360px) and (max-width: 480px) {
     .section {

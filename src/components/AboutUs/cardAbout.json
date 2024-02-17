@@ -2,7 +2,7 @@
       {
         "title": "Kreatywne podejście i dbałość o szczegóły",
         "text": "Specjaliści zapewniają doradztwo i kreatywność przy wyborze dekoracji balonowych, z dbałością o szczegóły",
-        "bgcolor": "#ED4B5E"
+        "bgcolor": "var(--accent-color)"
       },
       {
         "title": "Materiały przyjazne dla środowiska",

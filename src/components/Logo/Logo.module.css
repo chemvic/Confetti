@@ -2,7 +2,7 @@
    display: inline-block;
 }
 .logo_icon{
-    fill: #ED4B5E;
+    fill: var(--accent-color);
      width: 104px;
     height: 32px;
 }

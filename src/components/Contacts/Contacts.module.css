@@ -1,34 +1,9 @@
+@import 'styles/colors.module.css';
 .container {
     box-sizing: border-box;
     margin: 0 auto;
   }
-  
-  @media only screen and (min-width: 360px) and (max-width: 480px) {
-    .container {
-      width: 100%;
-      padding: 0 20px;
-    }
-  }
-  @media only screen and (min-width: 481px) and (max-width: 767px) {
-    .container {
-      width: 480px;
-      padding: 0 20px;
-    }
-  }
-  
-  @media screen and (min-width: 768px) {
-    .container {  
-     width: 768px;
-      padding: 0 30px;
-    }
-  }
-  
-  @media screen and (min-width: 1280px) {
-    .container {
-      width: 1280px;
-      padding: 0 32px;
-    } 
-  }
+
 .title{
     font-family: 'AnzeigenGroT';
     font-size: 36px;
@@ -36,7 +11,7 @@
     letter-spacing: -0.01em;
     line-height: 110%;
     text-align: center;
-    color: #ED4B5E ;
+    color: var(--accent-color) ;
     margin-bottom: 36px;
 }
 .firmInfo{
@@ -108,8 +83,8 @@
 .contacts_item:hover .icon,
 .contacts_item:focus .icon {
 
-  color: #ED4B5E;
-  fill: #ED4B5E;
+  color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 
@@ -119,6 +94,10 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+    }
+    .container {
+      width: 100%;
+      padding: 0 20px;
     }
     .contacts{
         margin-bottom: 40px;
@@ -133,6 +112,10 @@
       flex-direction: column;
       justify-content: center;
     }
+    .container {
+      width: 480px;
+      padding: 0 20px;
+    }
     .contacts{
         margin-bottom: 40px;
     }
@@ -142,6 +125,10 @@
   @media screen and (min-width: 768px) {
     .section {
      padding:  144px 0 40px;
+    }
+    .container {  
+      width: 768px;
+       padding: 0 30px;
     }
     .title {
         font-size: 48px;
@@ -168,6 +155,10 @@
     .section {
      padding:  50px 0;
     }
+    .container {
+      width: 1280px;
+      padding: 0 32px;
+    } 
     .contacts{
         padding: 100px 0;
         flex-direction: row;

@@ -12,11 +12,11 @@
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .modal_link:hover{
-    color: #ED4B5E;
+    color: var(--accent-color);
 }
 
 .modal_link:focus{
-    outline: 2px solid #ED4B5E;
+    outline: 2px solid var(--accent-color);
 }
 
 @media screen and (min-width: 768px) {

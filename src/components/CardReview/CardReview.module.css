@@ -32,7 +32,7 @@
 .icon{
     width: 24px;
     height: 24px;
-    fill: #ED4B5E;
+    fill: var(--accent-color);
     margin-right: 8px;
 }
 .user{

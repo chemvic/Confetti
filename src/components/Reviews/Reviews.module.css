@@ -9,7 +9,7 @@
     letter-spacing: -0.01em;
     line-height: 110%;
     text-align: center;
-    color: #ED4B5E ;
+    color: var(--accent-color) ;
     margin-bottom: 36px;
 }
 .slick-dots li button:after {
@@ -89,7 +89,7 @@
     
     .button:hover .icon,
     .button:focus .icon{
-        fill: #ED4B5E;
+        fill: var(--accent-color);
     }
     .prev_button{
         position: absolute;

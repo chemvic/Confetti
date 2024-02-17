@@ -10,7 +10,7 @@
     letter-spacing: -0.01em;
     line-height: 90%;
     text-align: center;
-    color: #ED4B5E ;
+    color: var(--accent-color) ;
 }
 
 .span{
