@@ -49,7 +49,7 @@ const BurgerMenu = ({scrolled}) => {
           <div className={`${css.modal} ${isOpen ?css.open: ''}`}>
             <div className={css.header_wrapper}> 
                 <div>
-                    <a href='/' className={css.logo} aria-label='Strona główna' >
+                    <a href={process.env.PUBLIC_URL + '/'} className={css.logo} aria-label='Strona główna' >
                         CONFETTI
                     </a>
                 </div>
